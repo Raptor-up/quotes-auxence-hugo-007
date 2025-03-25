@@ -1,4 +1,5 @@
-
+#include <stdio.h>
+#include <stdlib.h>
 #include "quotes.h"
 
 void print_quote(char ** quotes, int index) {

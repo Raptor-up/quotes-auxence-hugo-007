@@ -1,22 +1,24 @@
 #include <stdio.h>
-#include "quotes.h"
+#include <stdlib.h>
 #include <time.h>
+#include "quotes.h"
 
 int main() {
+    srand(time(NULL));
+
     char * quotes[MAX_QUOTES] = {
-        "Programmer - An organism that turns caffeine into code",
-        "Why do programmers prefer dark mode? Because light attracts bugs.",
-        "If debugging is the process of removing software bugs, then programming must be the process of putting them in.",
-        "I don't always test my code, but when I do, I do it in production.",
-        "Why do programmers always mix up Christmas and Halloween? Because Oct 31 == Dec 25!",
-        "Why did the programmer quit his job? Because he didn't get arrays.",
-        "Why do programmers prefer iOS development? Because the Swift.",
-        "Why do programmers prefer dogs over cats? Because dogs have fetch and cats have catch.",
-        "Why do programmers hate nature? It has too many bugs.",
-        "There are only 10 types of people in the world: Those who understand binary and those who don't."
+        "Pourquoi les plongeurs plongent-ils toujours en arrière et jamais en avant ? Parce que sinon ils tombent dans le bateau.",
+        "Je suis contre les pickpockets… sauf en cas de légitime défense.",
+        "J’ai acheté un aspirateur… mais il ne fait que prendre la poussière.",
+        "Si le travail c’est la santé… alors vive la maladie !",
+        "Il vaut mieux mobiliser son intelligence sur des conneries que mobiliser sa connerie sur des choses intelligentes.",
+        "L’alcool ne résout pas les problèmes… mais l’eau et le lait non plus.",
+        "Je n’ai pas le temps de me dépêcher.",
+        "La vitesse de la lumière est supérieure à celle du son. C’est pourquoi certaines personnes paraissent brillantes jusqu’à ce qu’elles parlent.",
+        "Je suis multitâche : je peux écouter, ignorer et oublier en même temps.",
+        "Je ne suis pas en retard, je suis en édition spéciale."
     };
 
-    srand(time(NULL));
     print_random_quote(quotes);
     return 0;
 }
